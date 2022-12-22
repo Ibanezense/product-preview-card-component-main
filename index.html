@@ -9,19 +9,22 @@
 </head>
 
 <body>
-  <div class="card">
+  <main class="card">
 
     <section class="card__image">
-      <img class="card__image__img" src="./assets/images/image-product-mobile.jpg" alt="perfume Gabrielle">
+      <picture>
+        <source class="card__image__img" media="(min-width: 700px)" srcset="./assets/images/image-product-desktop.jpg">
+        <img class="card__image__img" src="./assets/images/image-product-mobile.jpg" alt="perfume Gabrielle with floral essence">
+      </picture>
     </section>
 
     <section class="card__description">
-      <h3 class="card__category">Perfume</h3>
+      <p class="card__category">Perfume</p>
       <h1 class="card__title">Gabrielle Essence Eau De Parfum</h1>
       <p class="card__text">A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
       <div class="card__price">
         <p class="card__price__discount">$149.99</p>
-        <p class="card__price__normal">$169.99</p>
+        <del class="card__price__normal">$169.99</del>
       </div>
       <button class="card__button">
         <img src="./assets/images/icon-cart.svg" alt="icon cart">
@@ -29,7 +32,7 @@
       </button> 
     </section>
 
-  </div>
+  </main>
   
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
